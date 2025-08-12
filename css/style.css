@@ -1,3 +1,13 @@
+/*=============== COLORS ===============*/
+:root {
+  --color-primary: #1d3ba7;
+  --color-secondary: #0077cc;
+  --color-hover-txt: #7c8891;
+  --color-background: #f0f0f0;
+  --color-text: #333;
+  --color-faded: #1d3ba710;
+}
+
 /*============= BASE STYLES =============*/
 body {
   font-family: "Nunito", sans-serif;
@@ -28,7 +38,7 @@ footer {
   padding-left: 10%;
   padding-right: 10%;
   margin-top: 16px;
-  background-color: #1d3ba710;
+  background-color: var(--color-faded);
 }
 form input,
 form textarea {
@@ -53,29 +63,29 @@ nav ul li {
   padding: 8px 8px;
 }
 nav a {
-  color: #0077cc;
+  color: var(--color-secondary);
   text-decoration: none;
   transition: color 0.3s;
 }
 nav a:hover {
-  color: #7c8891;
+  color: var(--color-hover-txt);
 }
 nav a.active {
-  color: #1d3ba7;
+  color: var(--color-primary);
   font-weight: bold;
   text-decoration: underline;
 }
 .button-li {
-  background-color: #1d3ba7;
+  background-color: var(--color-primary);
   padding: 8px 16px;
   border-radius: 8px;
 }
 .button-li a {
-  color: #fff;
+  color: var(--color-background);
   text-decoration: none;
 }
 .button-li a.active {
-  color: white;
+  color: var(--color-background);
   font-weight: bold;
   text-decoration: underline;
 }
@@ -89,7 +99,7 @@ nav a.active {
 
 /*============= FORM =============*/
 .form {
-  background: #f0f0f0;
+  background: var(--color-background);
   padding: 2em;
 }
 .form-consent {
@@ -110,6 +120,7 @@ nav a.active {
 .footer-logo {
   position: absolute;
 }
+
 .footer-line {
   display: flex;
   justify-content: space-between;
