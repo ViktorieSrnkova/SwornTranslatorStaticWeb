@@ -49,6 +49,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   if (document.getElementById("form")) {
-    loadPartial(formPath, "form");
+    loadPartial(formPath, "form", () => {
+      emailjs.init("9-8UDT4yOARdsOl42");
+
+      const form = document.getElementById("contact-form");
+      const loader = document.getElementById("loader");
+      if (!form) return;
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        if (loader) loader.style.display = "grid";
+
+        // Honeypot kontrola
+        const honeypot = document.getElementById("website").value;
+        if (honeypot) {
+          console.log("Spam detekován - formulář nebyl odeslán.");
+          return;
+        }
+
+        emailjs.sendForm("service_n05yo4s", "template_r6rw30q", this).then(
+          function () {
+            if (loader) loader.style.display = "none";
+            alert("Zpráva úspěšně odeslána!");
+            form.reset();
+          },
+          function (error) {
+            console.error("Chyba při odesílání:", error);
+            alert("Něco se pokazilo, zkuste to prosím později.");
+          }
+        );
+      });
+    });
   }
 });
