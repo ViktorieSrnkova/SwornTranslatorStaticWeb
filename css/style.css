@@ -3,9 +3,11 @@
   --color-primary: #1d3ba7;
   --color-secondary: #0077cc;
   --color-hover-txt: #7c8891;
-  --color-background: #f0f0f0;
+  --color-background: #0077cc20;
   --color-text: #333;
   --color-faded: #1d3ba710;
+  --color-inverted: #f0f0f0;
+  --color-border: #0077cc60;
 }
 
 /*============= BASE STYLES =============*/
@@ -15,6 +17,7 @@ body {
   font-style: normal;
   margin: 0;
   line-height: 1.6;
+  box-sizing: border-box;
 }
 h1,
 h2,
@@ -23,6 +26,9 @@ h3 {
   font-weight: 500;
   font-variant: small-caps;
   font-style: normal;
+}
+.small {
+  font-size: small;
 }
 header {
   padding-left: 10%;
@@ -37,8 +43,10 @@ footer {
   padding: 16px;
   padding-left: 10%;
   padding-right: 10%;
-  margin-top: 16px;
   background-color: var(--color-faded);
+}
+main {
+  margin-bottom: 16px;
 }
 form input,
 form textarea {
@@ -79,11 +87,11 @@ nav a.active {
   background-color: var(--color-primary);
   padding: 8px 16px;
   border-radius: 8px;
-  color: var(--color-background);
+  color: var(--color-inverted);
   text-decoration: none;
 }
 .button-li.active {
-  color: var(--color-background);
+  color: var(--color-inverted);
   font-weight: bold;
   text-decoration: underline;
 }
@@ -99,19 +107,113 @@ nav a.active {
 .form {
   background: var(--color-background);
   padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+.form h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.form-group {
+  margin-top: 16px;
+}
+.form-group input,
+.form-group textarea {
+  box-sizing: border-box;
+  margin-bottom: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+.form-group textarea {
+  min-height: 200px;
+  resize: none;
+}
+#contact-form {
+  width: 60%;
+  margin: auto;
+}
+.thinner-form #contact-form {
+  width: 100%;
+}
+.thinner-form .one,
+.thicker-form .two {
+  display: none;
+}
+.thicker-form .one,
+.thinner-form .two {
+  display: block;
+}
+
 .form-consent {
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 8px;
   justify-content: start;
+  height: 26px;
+  margin-top: 8px;
 }
 .form-consent input[type="checkbox"] {
   margin: 0;
   width: auto;
+  align-self: center;
 }
 .thinner-form {
   width: 50%;
+}
+.right {
+  text-align: right;
+  margin: 0;
+  margin-left: auto;
+}
+.two {
+  display: flex;
+  margin-top: 24px;
+}
+.form-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: var(--color-primary);
+  color: var(--color-inverted);
+  border: none;
+  font-family: "Nunito", sans-serif;
+  font-size: medium;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin: auto;
+  margin-top: 32px;
+}
+.form-btn:hover {
+  background-color: var(--color-secondary);
+}
+/*=================== LOADER===================*/
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  transform: translateY(-100px);
+}
+.loader::before,
+.loader::after {
+  content: "";
+  grid-area: 1/1;
+  --c: no-repeat radial-gradient(farthest-side, var(--color-primary) 92%, #0000);
+  background: var(--c) 50% 0, var(--c) 50% 100%, var(--c) 100% 50%,
+    var(--c) 0 50%;
+  background-size: 12px 12px;
+  animation: l12 1s infinite;
+}
+.loader::before {
+  margin: 4px;
+  background-size: 8px 8px;
+  animation-timing-function: linear;
+}
+
+@keyframes l12 {
+  100% {
+    transform: rotate(0.5turn);
+  }
 }
 
 /*========= FOOTER ==========*/
