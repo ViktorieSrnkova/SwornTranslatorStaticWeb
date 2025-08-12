@@ -55,10 +55,6 @@ form textarea {
   margin-bottom: 1em;
   padding: 0.5em;
 }
-.section {
-  padding-left: 10%;
-  padding-right: 10%;
-}
 
 /*============== NAV ==============*/
 nav ul {
@@ -158,9 +154,6 @@ nav a.active {
   width: auto;
   align-self: center;
 }
-.thinner-form {
-  width: 50%;
-}
 .right {
   text-align: right;
   margin: 0;
@@ -170,6 +163,7 @@ nav a.active {
   display: flex;
   margin-top: 24px;
 }
+
 .form-btn {
   padding: 8px 16px;
   border-radius: 8px;
@@ -209,7 +203,6 @@ nav a.active {
   background-size: 8px 8px;
   animation-timing-function: linear;
 }
-
 @keyframes l12 {
   100% {
     transform: rotate(0.5turn);
@@ -255,4 +248,23 @@ nav a.active {
   gap: 1em;
   margin: 0;
   padding-top: 32px;
+}
+/*============= CONTACT ==============*/
+.contact-page {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.left-column-contact {
+  display: flex;
+  flex-direction: column;
+  padding-right: 16px;
+  width: 50%;
+  align-items: start;
+}
+.section {
+  width: 50%;
+  margin-top: 24px;
 }
