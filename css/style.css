@@ -79,12 +79,10 @@ nav a.active {
   background-color: var(--color-primary);
   padding: 8px 16px;
   border-radius: 8px;
-}
-.button-li a {
   color: var(--color-background);
   text-decoration: none;
 }
-.button-li a.active {
+.button-li.active {
   color: var(--color-background);
   font-weight: bold;
   text-decoration: underline;
