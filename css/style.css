@@ -8,11 +8,23 @@
   --color-faded: #1d3ba710;
   --color-inverted: #f0f0f0;
   --color-border: #0077cc60;
+  --color-btn-hover: #9cd6ff;
+}
+.lektor {
+  --color-primary: #677cc9;
+  --color-secondary: #2a449f;
+  --color-hover-txt: #000000;
+  --color-background: #ece7de80;
+  --color-text: #333;
+  --color-faded: #ece7de30;
+  --color-inverted: #f0f0f0;
+  --color-border: #0077cc60;
+  --color-btn-hover: #ffed89;
 }
 
 /*============= BASE STYLES =============*/
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Lato", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   margin: 0;
@@ -22,10 +34,14 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Spectral SC", serif;
-  font-weight: 500;
-  font-variant: small-caps;
+  font-family: "Caladea", serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
   font-style: normal;
+}
+h1 {
+  font-size: 2.5em;
 }
 .small {
   font-size: small;
@@ -88,15 +104,19 @@ nav a.active {
 }
 .button-li.active {
   color: var(--color-inverted);
-  font-weight: bold;
+  font-weight: normal;
   text-decoration: underline;
 }
-
+.button-li:hover {
+  color: var(--color-inverted);
+  background-color: var(--color-secondary);
+}
 /*============= FLAGS =============*/
 .flag-icon {
-  width: 20px;
+  width: 25px;
   height: auto;
   vertical-align: middle;
+  padding-bottom: 5px;
 }
 
 /*============= FORM =============*/
@@ -170,7 +190,7 @@ nav a.active {
   background-color: var(--color-primary);
   color: var(--color-inverted);
   border: none;
-  font-family: "Nunito", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: medium;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -260,11 +280,63 @@ nav a.active {
 .left-column-contact {
   display: flex;
   flex-direction: column;
-  padding-right: 16px;
   width: 50%;
-  align-items: start;
+  align-items: center;
+}
+.left-column-contact h1 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 48px;
 }
 .section {
   width: 50%;
   margin-top: 24px;
+}
+.section .form {
+  border-radius: 8px;
+}
+.contact-i {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.contact-i img {
+  margin-right: 8px;
+}
+.contact-i p {
+  margin: 0;
+}
+.horizontal {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
+  width: 100%;
+}
+.contact-image {
+  border-radius: 8px;
+  border: solid 3px var(--color-background);
+  height: 300px;
+  width: auto;
+}
+.logo-kruh {
+  padding-top: 48px;
+}
+.loga {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.logo-kruh-1 {
+  padding-top: 54px;
+}
+
+/*============= LESSONS ==============*/
+.centered-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.letak-img {
+  border-radius: 8px;
 }

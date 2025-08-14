@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <script src="../js/include.js" defer></script>
@@ -29,18 +29,103 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
   </head>
-  <body>
-    <div id="header"></div>
+  <body class="lektor">
+    <header>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="/en/index.html">Home Page</a></li>
+          <li><a href="/en/o-mne.html">About Me</a></li>
+          <li><a href="/en/sluzby.html">Services</a></li>
+          <li><a href="/en/cenik.html">Prices</a></li>
+          <li><a class="active" href="/en/lekce.html">English Lessons</a></li>
+          <li><a class="button-li" href="/en/kontakt.html">Contact</a></li>
+          <li>
+            <a href="../../index.html" title="Czech">
+              <img
+                src="../../images/flags/cz.png"
+                alt="Czech"
+                class="flag-icon"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <img
+        class="header-logo"
+        src="../images/logoLektorHoriEN.svg"
+        alt="Logo"
+        height="50"
+      />
+    </header>
 
-    <main>
+    <main class="centered-main">
       <h1>English Lessons</h1>
       <p>
         I offer individual English lessons tailored to your needs and
         proficiency level. You can expect a professional approach and many years
         of teaching experience.
       </p>
+      <img
+        src="/images/letakLektor.png"
+        alt="Lekce angličtiny leták"
+        class="letak-img"
+        height="600"
+      />
     </main>
+    <footer>
+      <img
+        class="footer-logo"
+        src="../images/logoLektorHoriEN.svg"
+        alt="Logo"
+        height="50"
+      />
+      <div class="footer-line">
+        <div class="contact-info">
+          <p>Pavla Hampton</p>
+          <p>
+            Email: hamptons@volny.cz <br />
+            Phone: +420 603 257 035
+          </p>
+        </div>
+        <div class="address">
+          <p>My Location:</p>
+          <p>Býčkovice 59, Býčkovice, 412 01</p>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35110.25737538215!2d14.151518526748248!3d50.54726729579173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47097eafd4329ab5%3A0x2b5b2df73db6b5cd!2zQsO9xI1rb3ZpY2UgNTksIDQxMiAwMSBCw73EjWtvdmljZQ!5e0!3m2!1scs!2scz!4v1754987503357!5m2!1scs!2scz"
+            width="600"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
 
-    <div id="footer"></div>
+      <p class="footer-copyright">
+        &copy;2025 Pavla Hampton - Sworn Translator since 1996
+      </p>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="/en/index.html">Home Page</a></li>
+          <li><a href="/en/o-mne.html">About Me</a></li>
+          <li><a href="/en/sluzby.html">Services</a></li>
+          <li><a href="/en/cenik.html">Prices</a></li>
+          <li><a class="active" href="/en/lekce.html">English Lessons</a></li>
+          <li><a class="button-li" href="/en/kontakt.html">Contact</a></li>
+          <li>
+            <a href="../../index.html" title="Czech">
+              <img
+                src="../../images/flags/cz.png"
+                alt="Czech"
+                class="flag-icon"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
