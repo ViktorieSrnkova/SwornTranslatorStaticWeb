@@ -24,9 +24,10 @@
 
 /*============= BASE STYLES =============*/
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  font-size: 1em;
   margin: 0;
   line-height: 1.6;
   box-sizing: border-box;
@@ -41,24 +42,26 @@ h3 {
   font-style: normal;
 }
 h1 {
-  font-size: 2.5em;
+  font-size: 2em;
 }
 .small {
   font-size: small;
 }
 header {
-  padding-left: 10%;
-  padding-right: 10%;
+  width: 1152px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 16px;
+  padding-top: 8px;
+  height: fit-content;
+  box-sizing: border-box;
 }
 footer {
   margin: auto;
   padding: 16px;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: calc((100% - 1152px) / 2);
+  padding-right: calc((100% - 1152px) / 2);
   background-color: var(--color-faded);
 }
 main {
@@ -145,10 +148,12 @@ nav a.active {
   min-height: 200px;
   resize: none;
 }
+
 #contact-form {
   width: 60%;
   margin: auto;
 }
+
 .thinner-form #contact-form {
   width: 100%;
 }
@@ -274,8 +279,9 @@ nav a.active {
   display: flex;
   flex-direction: row;
   align-items: start;
-  padding-left: 10%;
-  padding-right: 10%;
+  justify-content: space-between;
+  padding-left: calc((100% - 1152px) / 2);
+  padding-right: calc((100% - 1152px) / 2);
 }
 .left-column-contact {
   display: flex;
@@ -289,7 +295,7 @@ nav a.active {
   margin-bottom: 48px;
 }
 .section {
-  width: 50%;
+  width: 48%;
   margin-top: 24px;
 }
 .section .form {
@@ -360,4 +366,68 @@ nav a.active {
 }
 .letak-img {
   border-radius: 8px;
+}
+
+/*============= PRICES ==============*/
+
+.content-box-main {
+  width: 1152px;
+  margin: auto;
+}
+.table-prices {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-prices tr,
+.table-prices td {
+  border: 1px solid #000;
+  padding: 4px;
+  padding-left: 8px;
+  text-align: left;
+}
+.table-prices th {
+  text-align: left;
+  padding-left: 24px;
+  width: 100%;
+}
+
+.table-prices th:nth-child(1),
+.table-prices td:nth-child(1) {
+  width: 40%;
+}
+
+.table-prices th:nth-child(2),
+.table-prices td:nth-child(2) {
+  width: 45%;
+}
+
+.table-prices th:nth-child(3),
+.table-prices td:nth-child(3) {
+  width: 15%;
+}
+.price-list-units {
+  margin-top: 0px;
+}
+.price-list-units-p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.no-top-margin {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.vertical-align-middle {
+  vertical-align: middle;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.small-margin-p {
+  margin: 8px 0;
 }
