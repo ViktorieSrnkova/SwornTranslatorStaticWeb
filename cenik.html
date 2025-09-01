@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <script src="../js/include.js" defer></script>
@@ -29,9 +29,144 @@
   </head>
   <body>
     <div id="header"></div>
+    <main class="centered-main">
+      <h1>PŘEHLEDNÝ CENÍK SLUŽEB</h1>
+      <div class="content-box-main">
+        <p class="no-top-margin">
+          Ceny jsou <strong>orientační</strong> a závisí na konkrétní zakázce,
+          jejím rozsahu, délce spolupráce a případném požadavku na expresní
+          zpracování. Poštovné a cestovní výlohy se účtují
+          <strong>zvlášť</strong> podle skutečných nákladů a
+          <strong>nejsou započteny</strong> do cen v ceníku. Nejsem plátcem DPH.
+          Pro <strong>nezávaznou kalkulaci</strong> mě kontaktujte
+          <a href="/kontakt.html">zde</a>.<br />
+          Pro zadání <strong>závazné zakázky</strong> můžete vyplnit
+          <a href="/">závazný objednávkový formulář</a>. <br />
+          Ceník lekcí angličtiny je dostupný <a href="/lekce.html">zde</a>.
+        </p>
+        <p class="price-list-units-p">Jednotky a sazby:</p>
+        <ul class="price-list-units">
+          <li>
+            <strong>1 normostrana (NS)</strong> = 1800 znaků včetně mezer,
+            počítáno z výsledného (přeloženého) textu. Nejmenší účtovaná položka
+            je 0,5 NS.
+          </li>
+          <li>
+            <strong>Standardizované dokumenty</strong> (např. rodné listy,
+            výpisy) se účtují podle <strong>fyzických stran (FS)</strong>, a to
+            kvůli komplexnímu formátování.
+          </li>
+          <li>
+            Tlumočení se účtuje <strong>hodinově</strong>. Nejmenší účtovaná
+            položka je 15 min.
+          </li>
+          <li>
+            Svatební obřady se účtují <strong>fixní</strong> sazbou za obřad.
+          </li>
+        </ul>
+        <table class="table-prices">
+          <caption class="sr-only">
+            Ceník soudních překladů a tlumočení – Pavla Hampton
+          </caption>
+          <tr>
+            <th>Soudní překlady a tlumočení</th>
+          </tr>
+          <tr>
+            <td>Soudní překlad standardizovaných dokumentů</td>
+            <td>
+              rodný list, oddací list, výpis z obchodního nebo trestního
+              rejstříku apod.
+            </td>
+            <td>od 500 Kč / FS</td>
+          </tr>
+          <tr>
+            <td>Soudní překlad ostatních dokumentů</td>
+            <td>
+              rozsudek, plná moc, zakládací listina, smlouva, lékařská zpráva,
+              apod.
+            </td>
+            <td>od 600 Kč / NS</td>
+          </tr>
+          <tr>
+            <td>Soudní tlumočení</td>
+            <td>svatební obřad</td>
+            <td>1000 Kč</td>
+          </tr>
+          <tr>
+            <td>Soudní tlumočení</td>
+            <td>šušotáž, konsekutivní</td>
+            <td>750 Kč / hod.</td>
+          </tr>
+          <tr>
+            <td>Soudní tlumočení</td>
+            <td>tlumočení v autoškole</td>
+            <td>500 Kč / hod.</td>
+          </tr>
+          <tr>
+            <td>Příprava k testu v autoškole</td>
+            <td>prezenční či online</td>
+            <td>od 350 Kč / hod.</td>
+          </tr>
+        </table>
+        <p class="small-margin-p">
+          <em
+            >U soudních překladů a tlumočení jsou ceny ovlivněny typem
+            dokumentu, složitostí a časovými požadavky.</em
+          >
+        </p>
+        <table class="table-prices">
+          <caption class="sr-only">
+            Ceník nesoudních překladů – Pavla Hampton
+          </caption>
+          <tr>
+            <th>Nesoudní překlady</th>
+          </tr>
+          <tr>
+            <td>Překlad z angličtiny do češtiny</td>
+            <td rowspan="2" class="vertical-align-middle">
+              obchodní, technické, odborné a jiné překlady
+            </td>
+            <td>od 400 Kč / NS</td>
+          </tr>
+          <tr>
+            <td>Překlad z češtiny do angličtiny</td>
 
-    <main></main>
-
+            <td>od 550 Kč / NS</td>
+          </tr>
+        </table>
+        <p class="small-margin-p">
+          <em
+            >U odborných a specializovaných textů se cena může lišit dle oboru a
+            terminologické náročnosti.</em
+          >
+        </p>
+        <table class="table-prices">
+          <caption class="sr-only">
+            Ceník doplňkových služeb – Pavla Hampton
+          </caption>
+          <tr>
+            <th>Doplňkové služby</th>
+          </tr>
+          <tr>
+            <td>Expresní překlad za příplatek</td>
+            <td>překlad do druhého dne, či několika hodin</td>
+            <td>200 Kč / NS</td>
+          </tr>
+          <tr>
+            <td>Korektura</td>
+            <td>vlastní překlady, cizí texty</td>
+            <td>250 Kč / NS</td>
+          </tr>
+        </table>
+        <p class="small-margin-p">
+          <em
+            >Expresní překlady nabízím po předchozí domluvě s ohledem na mé
+            aktuální časové vytížení.
+            <a href="/kontakt.html">Domluvit se.</a></em
+          >
+        </p>
+      </div>
+    </main>
     <div id="footer"></div>
   </body>
 </html>
