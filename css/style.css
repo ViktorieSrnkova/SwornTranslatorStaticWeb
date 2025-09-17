@@ -14,7 +14,7 @@
   --color-primary: #677cc9;
   --color-secondary: #2a449f;
   --color-hover-txt: #000000;
-  --color-background: #ece7de80;
+  --color-background: #ece1ee80;
   --color-text: #333;
   --color-faded: #ece7de30;
   --color-inverted: #f0f0f0;
@@ -31,6 +31,7 @@ body {
   margin: 0;
   line-height: 1.6;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -357,6 +358,9 @@ nav a.active {
 .contact-link:active {
   color: var(--color-active);
 }
+.tooltip {
+  padding-left: 8px;
+}
 
 /*============= LESSONS ==============*/
 .centered-main {
@@ -366,6 +370,29 @@ nav a.active {
 }
 .letak-img {
   border-radius: 8px;
+}
+.pricing-table {
+  width: 100%; /* tabulka zabere celý div */
+  border-collapse: collapse; /* sjednocení hranic buněk pro lepší vzhled */
+  margin-top: 20px;
+}
+
+.pricing-table th,
+.pricing-table td {
+  border: 1px solid #333; /* černé ohraničení buněk */
+  padding: 10px; /* prostor uvnitř buněk */
+  text-align: left; /* zarovnání textu */
+}
+
+.pricing-table th {
+  background-color: #ffd90070; /* světlejší pozadí pro hlavičku */
+}
+
+.pricing-table tbody tr:nth-child(odd) {
+  background-color: #ffd90030; /* střídavé barvy řádků pro lepší čitelnost */
+}
+.lesson-form-textarea textarea {
+  min-height: 100px;
 }
 
 /*============= PRICES ==============*/
@@ -390,6 +417,8 @@ nav a.active {
   text-align: left;
   padding-left: 24px;
   width: 100%;
+  font-weight: bold;
+  background-color: #e0f0ff;
 }
 
 .table-prices th:nth-child(1),
@@ -405,6 +434,10 @@ nav a.active {
 .table-prices th:nth-child(3),
 .table-prices td:nth-child(3) {
   width: 15%;
+}
+
+.table-prices tbody tr:nth-child(odd) {
+  background-color: #f9f9f9; /* světle šedé pozadí lichých řádků */
 }
 .price-list-units {
   margin-top: 0px;
@@ -430,4 +463,56 @@ nav a.active {
 }
 .small-margin-p {
   margin: 8px 0;
+}
+
+/*===================== SERVICES =====================*/
+.alpha-list {
+  list-style-type: lower-alpha;
+}
+.alpha-list li::marker {
+  content: counter(list-item, lower-alpha) ") ";
+}
+
+/*===================== HOME =====================*/
+.index-image {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  opacity: 0.25;
+}
+.index-logo {
+  height: 350px;
+  position: absolute;
+  top: 20%;
+  /*tohle predelat na pixely ne procenta kvuli zmensovani*/
+  /*   filter: drop-shadow(2px 4px 6px #b8bdc4); */
+}
+.index-title {
+  position: absolute;
+  top: calc(20% + 340px);
+  /*   text-shadow: 2px 2px 4px #b8bdc4; */
+}
+.index-subtitle {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  top: calc(20% + 350px + 64px);
+  /* text-shadow: 2px 2px 4px #b8bdc4; */
+}
+.button-main {
+  background-color: var(--color-primary);
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: var(--color-inverted);
+  text-decoration: none;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+}
+.button-main:hover {
+  color: var(--color-inverted);
+  background-color: var(--color-secondary);
+  cursor: pointer;
 }
