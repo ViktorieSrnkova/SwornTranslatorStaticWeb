@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://uzivatelske-jmeno.github.io/nazev-repozitare/sitemap.xml

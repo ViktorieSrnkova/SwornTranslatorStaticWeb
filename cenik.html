@@ -12,7 +12,48 @@
       content="ceník, ceny překladatelských služeb, ceny tlumočnických služeb, soudní překlady"
     />
     <meta name="author" content="Pavla Hampton" />
-    <title>Ceník – Tlumočení a překlady Pavla Hampton</title>
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://uzivatelske-jmeno.github.io/cenik.html"
+    />
+    <meta
+      property="og:title"
+      content="Ceník – Tlumočení a překlady Pavla Hampton"
+    />
+    <meta
+      property="og:description"
+      content="Přehled cen za překladatelské a tlumočnické služby – soudní překlady, tlumočení od Pavly Hampton."
+    />
+    <meta
+      property="og:image"
+      content="https://uzivatelske-jmeno.github.io/images/logoSoudHori.png"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Pavla Hampton",
+        "jobTitle": "Soudní překladatelka a tlumočnice",
+        "image": "https://uzivatelske-jmeno.github.io/nazev-repozitare/images/Hampton.webp",
+        "email": "hamptonpavla51@gmail.com",
+        "telephone": "+420603257035",
+        "url": "https://uzivatelske-jmeno.github.io/nazev-repozitare/index.html",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Býčkovice 59",
+          "addressLocality": "Býčkovice",
+          "postalCode": "41201",
+          "addressCountry": "CZ"
+        },
+        "sameAs": [
+          "https://www.facebook.com/pavla.hampton",
+          "https://www.linkedin.com/in/pavla-hampton"
+        ]
+      }
+    </script>
+
+    <title>Ceník | Tlumočení a překlady Pavla Hampton</title>
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +61,6 @@
       href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script src="../js/include.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -30,25 +70,84 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link
+      rel="alternate"
+      hreflang="cs"
+      href="https://uzivatelske-jmeno.github.io/cenik.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://uzivatelske-jmeno.github.io/en/cenik.html"
+    />
+    <link
+      rel="canonical"
+      href="https://uzivatelske-jmeno.github.io/cenik.html"
+    />
   </head>
   <body>
-    <div id="header"></div>
+    <header>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="/index.html">Hlavní stránka</a></li>
+          <li><a href="/o-mne.html">O mně</a></li>
+          <li><a href="/sluzby.html">Služby</a></li>
+          <li><a class="active" href="/cenik.html">Ceník</a></li>
+          <li><a href="/lekce.html">Lekce angličtiny</a></li>
+          <li><a class="button-li" href="/kontakt.html">Kontakt</a></li>
+          <li>
+            <a href="../../en/cenik.html" title="English">
+              <img
+                src="../../images/flags/uk.png"
+                alt="English"
+                class="flag-icon"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <img
+        class="header-logo"
+        src="../images/logoSoudHori.svg"
+        alt="Logo Pavla Hampton – tlumočení a překlady"
+        height="50"
+      />
+    </header>
     <main class="centered-main">
-      <h1>PŘEHLEDNÝ CENÍK SLUŽEB</h1>
-      <div class="content-box-main">
+      <h1 class="page-title">PŘEHLEDNÝ CENÍK SLUŽEB</h1>
+      <section class="color-section thinner-padding">
         <p class="no-top-margin">
           Ceny jsou <strong>orientační</strong> a závisí na konkrétní zakázce,
           jejím rozsahu, délce spolupráce a případném požadavku na expresní
           zpracování. Poštovné a cestovní výlohy se účtují
           <strong>zvlášť</strong> podle skutečných nákladů a
           <strong>nejsou započteny</strong> do cen v ceníku. Nejsem plátcem DPH.
-          Pro <strong>nezávaznou kalkulaci</strong> mě kontaktujte
-          <a href="/kontakt.html">zde</a>.<br />
-          Pro zadání <strong>závazné zakázky</strong> můžete vyplnit
-          <a href="/">závazný objednávkový formulář</a>. <br />
-          Ceník lekcí angličtiny je dostupný
-          <a href="/lekce.html#pricing">zde</a>.
+          .<br />
         </p>
+        <div class="btn-group">
+          <button
+            class="button-main btn-right"
+            onclick="location.href='/kontakt.html'"
+          >
+            Nezávazná kalkulace
+          </button>
+          <a
+            href="/assets/objednavka_prekladu_tlumoceni.docx"
+            download
+            class="button-main"
+          >
+            Stáhnout závazný poptávkový formulář
+          </a>
+          <button
+            class="button-main btn-right"
+            onclick="location.href='/lekce.html#pricing'"
+          >
+            Ceník lekcí angličtiny
+          </button>
+        </div>
+      </section>
+
+      <section class="white-section thinner-padding">
         <p class="price-list-units-p">Jednotky a sazby:</p>
         <ul class="price-list-units">
           <li>
@@ -69,6 +168,8 @@
             Svatební obřady se účtují <strong>fixní</strong> sazbou za obřad.
           </li>
         </ul>
+      </section>
+      <section class="color-section thinner-padding">
         <table class="table-prices">
           <caption class="sr-only">
             Ceník soudních překladů a tlumočení – Pavla Hampton
@@ -113,12 +214,16 @@
             <td>od 350 Kč / hod.</td>
           </tr>
         </table>
+      </section>
+      <section class="white-section thinner-padding">
         <p class="small-margin-p">
           <em
             >U soudních překladů a tlumočení jsou ceny ovlivněny typem
             dokumentu, složitostí a časovými požadavky.</em
           >
         </p>
+      </section>
+      <section class="color-section thinner-padding">
         <table class="table-prices">
           <caption class="sr-only">
             Ceník nesoudních překladů – Pavla Hampton
@@ -139,12 +244,16 @@
             <td>od 550 Kč / NS</td>
           </tr>
         </table>
+      </section>
+      <section class="white-section thinner-padding">
         <p class="small-margin-p">
           <em
             >U odborných a specializovaných textů se cena může lišit dle oboru a
             terminologické náročnosti.</em
           >
         </p>
+      </section>
+      <section class="color-section thinner-padding">
         <table class="table-prices">
           <caption class="sr-only">
             Ceník doplňkových služeb – Pavla Hampton
@@ -163,20 +272,109 @@
             <td>250 Kč / NS</td>
           </tr>
         </table>
-        <p class="small-margin-p">
+      </section>
+      <section class="white-section thinner-padding">
+        <p class="small-margin-p flexy">
           <em
             >Expresní překlady nabízím po předchozí domluvě s ohledem na mé
             aktuální časové vytížení.
-            <a href="/kontakt.html">Domluvit se.</a></em
+          </em>
+          <button
+            class="button-main btn-right"
+            onclick="location.href='/kontakt.html'"
           >
+            Domluvit se
+          </button>
         </p>
         <small>
           Možná nebudu moci ihned reagovat na vaše volání nebo zprávu, protože
           právě učím nebo tlumočím. Bez obav, spojím se s Vámi, jakmile to bude
           možné.
         </small>
-      </div>
+      </section>
     </main>
-    <div id="footer"></div>
+    <footer>
+      <img
+        class="footer-logo"
+        src="../images/logoSoudHori.svg"
+        alt="Logo Pavla Hampton – tlumočení a překlady"
+        height="50"
+      />
+      <div class="footer-line">
+        <div class="contact-info">
+          <p>Pavla Hampton</p>
+          <p>
+            Email:
+            <a class="contact-link" href="mailto:hamptonpavla51@gmail.com"
+              >hamptonpavla51@gmail.com
+            </a>
+            <br />
+            Telefon:
+            <a class="contact-link" href="tel:+420603257035"
+              >+420 603 257 035</a
+            >
+            <span
+              class="tooltip"
+              title=" Možná nebudu moci ihned reagovat na vaše volání nebo zprávu, protože právě učím nebo tlumočím. Bez obav, spojím se s Vámi, jakmile to budemožné."
+            >
+              <i class="fa-solid fa-circle-info"></i
+            ></span>
+          </p>
+        </div>
+        <div class="address">
+          <p>Moje Lokace:</p>
+          <address>
+            <a
+              href="https://www.google.com/maps/place/B%C3%BD%C4%8Dkovice+59,+412+01"
+              target="_blank"
+              rel="noopener"
+              class="contact-link"
+            >
+              Býčkovice 59, 412 01, <br />
+              Česká republika
+            </a>
+          </address>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35110.25737538215!2d14.151518526748248!3d50.54726729579173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47097eafd4329ab5%3A0x2b5b2df73db6b5cd!2zQsO9xI1rb3ZpY2UgNTksIDQxMiAwMSBCw73EjWtvdmljZQ!5e0!3m2!1scs!2scz!4v1754987503357!5m2!1scs!2scz"
+            width="600"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <p class="footer-copyright">
+        &copy;2025 Pavla Hampton - Soudní překladatelka od roku 1996
+      </p>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="/index.html">Hlavní stránka</a></li>
+          <li><a href="/o-mne.html">O mně</a></li>
+          <li><a href="/sluzby.html">Služby</a></li>
+          <li><a class="active" href="/cenik.html">Ceník</a></li>
+          <li><a href="/lekce.html">Lekce angličtiny</a></li>
+          <li><a class="button-li" href="/kontakt.html">Kontakt</a></li>
+          <li>
+            <a href="../../en/cenik.html" title="English">
+              <img
+                src="../../images/flags/uk.png"
+                alt="English"
+                class="flag-icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="../../assets/VOP.pdf" target="_blank"
+              >Všeobecné obchodní podmínky</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>

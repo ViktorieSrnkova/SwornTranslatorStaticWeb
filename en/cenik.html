@@ -12,7 +12,47 @@
       content="price list, translation rates, interpreting rates, certified translations"
     />
     <meta name="author" content="Pavla Hampton" />
-    <title>Price List – Interpreting and Translation by Pavla Hampton</title>
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://uzivatelske-jmeno.github.io/en/cenik.html"
+    />
+    <meta
+      property="og:title"
+      content="Price List – Interpreting and Translation by Pavla Hampton"
+    />
+    <meta
+      property="og:description"
+      content="Overview of prices for translation and interpreting services – certified translations, interpreting by Pavla Hampton."
+    />
+    <meta
+      property="og:image"
+      content="https://uzivatelske-jmeno.github.io/images/logoSoudHori.png"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Pavla Hampton",
+        "jobTitle": "Sworn Translator and Interpreter",
+        "image": "https://uzivatelske-jmeno.github.io/nazev-repozitare/images/Hampton.webp",
+        "email": "hamptonpavla51@gmail.com",
+        "telephone": "+420603257035",
+        "url": "https://uzivatelske-jmeno.github.io/nazev-repozitare/en/index.html",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Býčkovice 59",
+          "addressLocality": "Býčkovice",
+          "postalCode": "41201",
+          "addressCountry": "CZ"
+        },
+        "sameAs": [
+          "https://www.facebook.com/pavla.hampton",
+          "https://www.linkedin.com/in/pavla-hampton"
+        ]
+      }
+    </script>
+    <title>Price List | Interpreting and Translation by Pavla Hampton</title>
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +60,6 @@
       href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script src="../js/include.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -30,25 +69,77 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link
+      rel="alternate"
+      hreflang="cs"
+      href="https://uzivatelske-jmeno.github.io/cenik.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://uzivatelske-jmeno.github.io/en/cenik.html"
+    />
+    <link
+      rel="canonical"
+      href="https://uzivatelske-jmeno.github.io/en/cenik.html"
+    />
   </head>
   <body>
-    <div id="header"></div>
+    <header>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="/en/index.html">Home Page</a></li>
+          <li><a href="/en/o-mne.html">About Me</a></li>
+          <li><a href="/en/sluzby.html">Services</a></li>
+          <li><a class="active" href="/en/cenik.html">Prices</a></li>
+          <li><a class="button-li" href="/en/kontakt.html">Contact</a></li>
+          <li>
+            <a href="../../cenik.html" title="Czech">
+              <img
+                src="../../images/flags/cz.png"
+                alt="Czech"
+                class="flag-icon"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <img
+        class="header-logo"
+        src="../images/logoSoudHoriEN.svg"
+        alt="Logo Pavla Hampton – interpreting and translations"
+        height="50"
+      />
+    </header>
     <main class="centered-main">
-      <h1>PRICE LIST</h1>
-      <div class="content-box-main">
+      <h1 class="page-title">PRICE LIST</h1>
+      <section class="color-section thinner-padding">
         <p class="no-top-margin">
           Prices are <strong>indicative</strong> and depend on the specific
           project, its scope and the duration of the collaboration. There is an
           extra charge for express delivery. Postage and travel expenses are
           charged <strong>separately</strong> and
           <strong>are not included</strong> in the listed prices. I am not a VAT
-          payer. To receive a <strong>non-binding quote</strong>, please contact
-          me <a href="/kontakt.html">here</a>.<br />
-          To place a <strong>binding order</strong>, please fill in the
-          <a href="/">order form</a>. <br />
-          The English tutoring price list is available
-          <a href="/lekce.html">here</a>.
+          payer. .<br />
         </p>
+        <div class="btn-group">
+          <button
+            class="button-main btn-right"
+            onclick="location.href='/kontakt.html'"
+          >
+            Get a non-binding quote
+          </button>
+          <a
+            href="/assets/binding_order_for_translation_interpreting.docx"
+            download
+            class="button-main"
+          >
+            Download binding order form
+          </a>
+        </div>
+      </section>
+
+      <section class="white-section thinner-padding">
         <p class="price-list-units-p">Units and rates:</p>
         <ul class="price-list-units">
           <li>
@@ -70,6 +161,8 @@
             ceremony.
           </li>
         </ul>
+      </section>
+      <section class="color-section thinner-padding">
         <table class="table-prices">
           <caption class="sr-only">
             Price list – certified translations and interpreting by Pavla
@@ -115,12 +208,16 @@
             <td>from 350 CZK / hour</td>
           </tr>
         </table>
+      </section>
+      <section class="white-section thinner-padding">
         <p class="small-margin-p">
           <em
             >Prices for certified translations and interpreting depend on the
             type of document, complexity, and time requirements.</em
           >
         </p>
+      </section>
+      <section class="color-section thinner-padding">
         <table class="table-prices">
           <caption class="sr-only">
             Price list – non-certified translations by Pavla Hampton
@@ -137,15 +234,20 @@
           </tr>
           <tr>
             <td>Translation from Czech to English</td>
+
             <td>from 550 CZK / SP</td>
           </tr>
         </table>
+      </section>
+      <section class="white-section thinner-padding">
         <p class="small-margin-p">
           <em
             >For specialized and technical texts, the price may vary depending
             on the field and terminological difficulty.</em
           >
         </p>
+      </section>
+      <section class="color-section thinner-padding">
         <table class="table-prices">
           <caption class="sr-only">
             Price list – additional services by Pavla Hampton
@@ -164,20 +266,108 @@
             <td>250 CZK / SP</td>
           </tr>
         </table>
-        <p class="small-margin-p">
+      </section>
+      <section class="white-section thinner-padding">
+        <p class="small-margin-p flexy">
           <em
             >Express translations are available upon prior agreement, depending
             on my current availability.
-            <a href="/kontakt.html">Get in touch.</a></em
+          </em>
+          <button
+            class="button-main btn-right"
+            onclick="location.href='/kontakt.html'"
           >
+            Get in touch
+          </button>
         </p>
-        <small
-          >P.S. I might not be able to pick up your call immediately because i
-          am teaching or interpreting at the moment. Do not worry, I will call
-          you back as soon as possible.</small
-        >
-      </div>
+        <small>
+          P.S. I might not be able to pick up your call immediately because i am
+          teaching or interpreting at the moment. Do not worry, I will call you
+          back as soon as possible.
+        </small>
+      </section>
     </main>
-    <div id="footer"></div>
+    <footer>
+      <img
+        class="footer-logo"
+        src="../images/logoSoudHoriEN.svg"
+        alt="Logo Pavla Hampton – interpreting and translations"
+        height="50"
+      />
+      <div class="footer-line">
+        <div class="contact-info">
+          <p>Pavla Hampton</p>
+          <p>
+            Email:
+            <a class="contact-link" href="mailto:hamptonpavla51@gmail.com"
+              >hamptonpavla51@gmail.com</a
+            >
+            <br />
+            Phone:
+            <a class="contact-link" href="tel:+420603257035"
+              >+420 603 257 035</a
+            >
+            <span
+              class="tooltip"
+              title="I might not be able to pick up your call immediately because i am teaching or interpreting at the moment. Do not worry, I will call you back as soon as possible."
+            >
+              <i class="fa-solid fa-circle-info"></i
+            ></span>
+          </p>
+        </div>
+        <div class="address">
+          <p>My Location:</p>
+          <address>
+            <a
+              href="https://www.google.com/maps/place/B%C3%BD%C4%8Dkovice+59,+412+01"
+              target="_blank"
+              rel="noopener"
+              class="contact-link"
+            >
+              Býčkovice 59, 412 01, <br />
+              Czech Republic
+            </a>
+          </address>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35110.25737538215!2d14.151518526748248!3d50.54726729579173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47097eafd4329ab5%3A0x2b5b2df73db6b5cd!2zQsO9xI1rb3ZpY2UgNTksIDQxMiAwMSBCw73EjWtvdmljZQ!5e0!3m2!1scs!2scz!4v1754987503357!5m2!1scs!2scz"
+            width="600"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <p class="footer-copyright">
+        &copy;2025 Pavla Hampton - Sworn Translator since 1996
+      </p>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="/en/index.html">Home Page</a></li>
+          <li><a href="/en/o-mne.html">About Me</a></li>
+          <li><a href="/en/sluzby.html">Services</a></li>
+          <li><a class="active" href="/en/cenik.html">Prices</a></li>
+          <li><a class="button-li" href="/en/kontakt.html">Contact</a></li>
+          <li>
+            <a href="../../cenik.html" title="Czech">
+              <img
+                src="../../images/flags/cz.png"
+                alt="Czech"
+                class="flag-icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="../../assets/VOP_en.pdf" target="_blank"
+              >General Terms and Conditions</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>

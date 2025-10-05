@@ -3,12 +3,13 @@
   --color-primary: #1d3ba7;
   --color-secondary: #0077cc;
   --color-hover-txt: #7c8891;
-  --color-background: #0077cc20;
+  --color-background: #83c9fb20;
   --color-text: #333;
-  --color-faded: #1d3ba710;
+  --color-faded: #1d3ba707;
   --color-inverted: #f0f0f0;
   --color-border: #0077cc60;
   --color-btn-hover: #9cd6ff;
+  --white: #ffffff;
 }
 .lektor {
   --color-primary: #677cc9;
@@ -21,7 +22,9 @@
   --color-border: #0077cc60;
   --color-btn-hover: #ffed89;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /*============= BASE STYLES =============*/
 body {
   font-family: "Roboto", sans-serif;
@@ -75,7 +78,9 @@ form textarea {
   margin-bottom: 1em;
   padding: 0.5em;
 }
-
+img {
+  border-radius: 8px;
+}
 /*============== NAV ==============*/
 nav ul {
   list-style: none;
@@ -394,6 +399,27 @@ nav a.active {
 .lesson-form-textarea textarea {
   min-height: 100px;
 }
+.about-content {
+  display: flex;
+}
+.about-text {
+  padding: 16px 40px 16px 0;
+}
+.about-photo {
+  margin-top: -60px;
+}
+.lower-position {
+  margin-top: 0;
+}
+.lektor-main {
+  background-image: url("/images/bgr.png");
+  background-color: rgb(255, 255, 255, 0.2);
+  background-blend-mode: lighten;
+}
+.main-hero {
+  width: 100%;
+  background-color: white;
+}
 
 /*============= PRICES ==============*/
 
@@ -441,6 +467,7 @@ nav a.active {
 }
 .price-list-units {
   margin-top: 0px;
+  margin-bottom: 0 !important;
 }
 .price-list-units-p {
   margin-bottom: 0;
@@ -463,6 +490,10 @@ nav a.active {
 }
 .small-margin-p {
   margin: 8px 0;
+  margin-bottom: 0 !important;
+}
+.thinner-padding {
+  padding: 20px 0 !important;
 }
 
 /*===================== SERVICES =====================*/
@@ -515,4 +546,94 @@ nav a.active {
   color: var(--color-inverted);
   background-color: var(--color-secondary);
   cursor: pointer;
+}
+.gap-left {
+  margin-left: 8px;
+}
+/*==================== SECTIONS ====================*/
+.color-section {
+  background-color: var(--color-faded);
+}
+
+.color-section,
+.white-section {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.color-section > *,
+.white-section > * {
+  max-width: 1152px;
+  margin: auto;
+  width: 100%;
+}
+
+.color-section small,
+.white-section small {
+  padding-left: calc((100% - 1152px) / 2);
+}
+
+.white-section hr,
+.color-section hr {
+  max-width: 100%;
+}
+.color-section h2,
+.white-section h2 {
+  text-align: left;
+  margin-bottom: 24px;
+}
+.color-section p,
+.color-section ul,
+.white-section p,
+.white-section ul {
+  margin-bottom: 16px;
+}
+.btn-group {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+.btn-group button,
+.btn-group a {
+  margin: 0;
+  margin-top: 16px;
+}
+.flexy {
+  display: flex;
+}
+.btn-right {
+  margin-left: auto;
+}
+/*=================== GALLERY ===================*/
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+.stamp {
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.certificate-thumb {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+}
+.flexy-column {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+}
+.label {
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
 }

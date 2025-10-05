@@ -12,6 +12,38 @@
       content="kontakt, Pavla Hampton, soudní překladatelka, tlumočnice, překlady, tlumočení, kontaktní formulář, angličtina, doučování, lekce angličtiny"
     />
     <meta name="author" content="Pavla Hampton" />
+    <meta property="og:title" content="Kontakt – Pavla Hampton" />
+    <meta
+      property="og:description"
+      content="Kontaktujte Pavlu Hampton, profesionální soudní překladatelku a tlumočnici. Lekce angličtiny všech úrovní. Rychlá a spolehlivá komunikace."
+    />
+    <meta
+      property="og:image"
+      content="https://uzivatelske-jmeno.github.io/nazev-repozitare/images/Hampton-1.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://uzivatelske-jmeno.github.io/nazev-repozitare/kontakt.html"
+    />
+    <meta property="og:type" content="website" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Pavla Hampton",
+        "jobTitle": "Soudní překladatelka a tlumočnice",
+        "email": "hamptonpavla51@gmail.com",
+        "telephone": "+420603257035",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Býčkovice 59",
+          "addressLocality": "Býčkovice",
+          "postalCode": "41201",
+          "addressCountry": "CZ"
+        },
+        "sameAs": "https://www.facebook.com/pavla.hampton"
+      }
+    </script>
     <title>Kontakt – Tlumočení a překlady Pavla Hampton</title>
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,7 +52,6 @@
       href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script src="../js/include.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -30,11 +61,49 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://uzivatelske-jmeno.github.io/en/kontakt.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="cs"
+      href="https://uzivatelske-jmeno.github.io/kontakt.html"
+    />
+    <link
+      rel="canonical"
+      href="https://uzivatelske-jmeno.github.io/kontakt.html"
+    />
   </head>
-
   <body>
-    <div id="header"></div>
-
+    <header>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="/index.html">Hlavní stránka</a></li>
+          <li><a href="/o-mne.html">O mně</a></li>
+          <li><a href="/sluzby.html">Služby</a></li>
+          <li><a href="/cenik.html">Ceník</a></li>
+          <li><a href="/lekce.html">Lekce angličtiny</a></li>
+          <li><a class="button-li active" href="/kontakt.html">Kontakt</a></li>
+          <li>
+            <a href="../../en/kontakt.html" title="English">
+              <img
+                src="../../images/flags/uk.png"
+                alt="English"
+                class="flag-icon"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <img
+        class="header-logo"
+        src="../images/logoSoudHori.svg"
+        alt="Logo"
+        height="50"
+      />
+    </header>
     <main class="contact-page">
       <div class="left-column-contact">
         <h1>Kontakt</h1>
@@ -49,6 +118,9 @@
           </div>
           <div>
             <h2>Pavla Hampton</h2>
+            <div class="contact-i">
+              <span>IČO: 62652613</span>
+            </div>
             <div class="contact-i">
               <img
                 src="../../images/mail.svg"
@@ -70,10 +142,11 @@
               <a class="contact-link" href="tel:+420603257035"
                 >+420 603 257 035</a
               >
-              <span  class="tooltip"
+              <span
+                class="tooltip"
                 title=" Možná nebudu moci ihned reagovat na vaše volání nebo zprávu, protože právě učím nebo tlumočím. Bez obav, spojím se s Vámi, jakmile to bude možné."
               >
-                <i class="fa-solid fa-circle-info"></i></i
+                <i class="fa-solid fa-circle-info"></i
               ></span>
             </div>
             <div class="contact-i">
@@ -112,10 +185,179 @@
         </div>
       </div>
       <div class="section">
-        <div id="form" class="thinner-form"></div>
+        <div class="form thinner-form">
+          <h2>Zašlete mi svou zprávu</h2>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="user_name"
+                >Vaše celé jméno <span class="small">*</span></label
+              >
+              <input type="text" id="user_name" name="user_name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="user_email"
+                >Váš e-mail <span class="small">*</span></label
+              >
+              <input type="email" id="user_email" name="user_email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="user_phone"
+                >Váš telefon <span class="small">*</span></label
+              >
+              <input type="tel" id="user_phone" name="user_phone" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message"
+                >Vaše zpráva <span class="small">*</span></label
+              >
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <div style="display: none">
+              <label for="website">Web</label>
+              <input
+                type="text"
+                id="website"
+                name="website"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="form-group form-consent">
+              <input type="checkbox" id="consent" name="consent" required />
+              <label for="consent"
+                >Souhlasím se zpracováním osobních údajů, které jsou využívány
+                pouze pro účely komunikace. <span class="small">*</span></label
+              >
+              <p class="small right one">* Povinná pole</p>
+            </div>
+            <p class="small right two">* Povinná pole</p>
+            <button class="form-btn" type="submit">Odeslat</button>
+          </form>
+          <div id="loader" class="loader" style="display: none"></div>
+        </div>
       </div>
     </main>
+    <footer>
+      <img
+        class="footer-logo"
+        src="../images/logoSoudHori.svg"
+        alt="Logo"
+        height="50"
+      />
+      <div class="footer-line">
+        <div class="contact-info">
+          <p>Pavla Hampton</p>
+          <p>
+            Email:
+            <a class="contact-link" href="mailto:hamptonpavla51@gmail.com"
+              >hamptonpavla51@gmail.com
+            </a>
+            <br />
+            Telefon:
+            <a class="contact-link" href="tel:+420603257035"
+              >+420 603 257 035</a
+            >
+            <span
+              class="tooltip"
+              title=" Možná nebudu moci ihned reagovat na vaše volání nebo zprávu, protože právě učím nebo tlumočím. Bez obav, spojím se s Vámi, jakmile to budemožné."
+            >
+              <i class="fa-solid fa-circle-info"></i
+            ></span>
+          </p>
+        </div>
+        <div class="address">
+          <p>Moje Lokace:</p>
+          <address>
+            <a
+              href="https://www.google.com/maps/place/B%C3%BD%C4%8Dkovice+59,+412+01"
+              target="_blank"
+              rel="noopener"
+              class="contact-link"
+            >
+              Býčkovice 59, 412 01, <br />
+              Česká republika
+            </a>
+          </address>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35110.25737538215!2d14.151518526748248!3d50.54726729579173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47097eafd4329ab5%3A0x2b5b2df73db6b5cd!2zQsO9xI1rb3ZpY2UgNTksIDQxMiAwMSBCw73EjWtvdmljZQ!5e0!3m2!1scs!2scz!4v1754987503357!5m2!1scs!2scz"
+            width="600"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
 
-    <div id="footer"></div>
+      <p class="footer-copyright">
+        &copy;2025 Pavla Hampton - Soudní překladatelka od roku 1996
+      </p>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="/index.html">Hlavní stránka</a></li>
+          <li><a href="/o-mne.html">O mně</a></li>
+          <li><a href="/sluzby.html">Služby</a></li>
+          <li><a href="/cenik.html">Ceník</a></li>
+          <li><a href="/lekce.html">Lekce angličtiny</a></li>
+          <li><a class="button-li active" href="/kontakt.html">Kontakt</a></li>
+          <li>
+            <a href="../../en/kontakt.html" title="English">
+              <img
+                src="../../images/flags/uk.png"
+                alt="English"
+                class="flag-icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="../../assets/VOP.pdf" target="_blank"
+              >Všeobecné obchodní podmínky</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.getElementById("contact-form");
+        const loader = document.getElementById("loader");
+        if (!form) return;
+
+        // Inicializace EmailJS
+        emailjs.init("9-8UDT4yOARdsOl42");
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          if (loader) loader.style.display = "grid";
+
+          // Honeypot kontrola
+          const honeypot = document.getElementById("website").value;
+          if (honeypot) {
+            console.log("Spam detekován - formulář nebyl odeslán.");
+            return;
+          }
+
+          emailjs.sendForm("service_n05yo4s", "template_r6rw30q", this).then(
+            function () {
+              if (loader) loader.style.display = "none";
+              alert("Zpráva úspěšně odeslána!");
+              form.reset();
+            },
+            function (error) {
+              console.error("Chyba při odesílání:", error);
+              alert("Něco se pokazilo, zkuste to prosím později.");
+            }
+          );
+        });
+      });
+    </script>
   </body>
 </html>
