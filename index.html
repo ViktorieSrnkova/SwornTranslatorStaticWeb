@@ -58,6 +58,7 @@
       href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="../js/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -109,23 +110,18 @@
     </header>
 
     <main class="centered-main">
-      <img
-        src="../../images/docs_img.jpg"
-        alt="Pavla Hampton – sworn translator and interpreter homepage image of documents"
-        class="index-image"
-        loading="lazy"
-      />
-
-      <img
-        src="../../images/logoSoud.svg"
-        alt="Pavla Hampton - kulaté logo soudní překladatelky a tlumočnice"
-        class="index-logo"
-      />
-      <h1 class="index-title">Vaše jistota v cizím jazyce.</h1>
-      <h2 class="index-subtitle">
-        Překlady a tlumočení, na které se můžete spolehnout – od oficiálních
-        dokumentů po každodenní situace.
-      </h2>
+      <div class="hero-section">
+        <img
+          src="../../images/logoSoud.svg"
+          alt="Pavla Hampton - kulaté logo soudní překladatelky a tlumočnice"
+          class="index-logo"
+        />
+        <h1 class="index-title">Vaše jistota v cizím jazyce.</h1>
+        <h2 class="index-subtitle">
+          Překlady a tlumočení, na které se můžete spolehnout – od oficiálních
+          dokumentů po každodenní situace.
+        </h2>
+      </div>
 
       <section class="white-section">
         <h2>Kdo jsem</h2>
@@ -139,16 +135,18 @@
           dbám na
           <strong>profesionalitu, přesnost a naprostou důvěrnost</strong>.
         </p>
-        <p class="flexy">
-          Moje certifikace a oprávnění si můžete prohlédnout
-          <a class="gap-left" href="/o-mne.html#certifikace"> zde</a>.
+        <div class="flexy res-col">
+          <p class="no-margin">
+            Moje certifikace a oprávnění si můžete prohlédnout
+            <a class="gap-left" href="/o-mne.html#certifikace"> zde</a>.
+          </p>
           <button
             class="button-main btn-right"
             onclick="location.href='/o-mne.html'"
           >
             O mně
           </button>
-        </p>
+        </div>
       </section>
       <br />
       <section class="color-section">
@@ -168,7 +166,7 @@
           </li>
         </ul>
 
-        <div class="btn-group">
+        <div class="btn-group small-btns">
           <button class="button-main" onclick="location.href='/sluzby.html'">
             Služby
           </button>
@@ -211,15 +209,18 @@
           </button>
         </p>
         <br />
-        <p class="flexy">
-          Výuka angličtiny má pro přehlednost samostatný ceník, který se nachází
-          na stránce lekce angličtiny.<button
+        <div class="flexy res-col">
+          <p class="no-margin">
+            Výuka angličtiny má pro přehlednost samostatný ceník, který se
+            nachází na stránce lekce angličtiny.
+          </p>
+          <button
             class="button-main btn-right"
             onclick="location.href='/lekce.html#pricing'"
           >
             Ceník lekcí angličtiny
           </button>
-        </p>
+        </div>
       </section>
       <br />
       <section class="white-section">
@@ -240,7 +241,7 @@
           <a
             href="/assets/objednavka_prekladu_tlumoceni.docx"
             download
-            class="button-main"
+            class="button-main a-btn"
           >
             Stáhnout závazný poptávkový formulář
           </a>
@@ -289,7 +290,6 @@
           >
           <p class="small right one">* Povinná pole</p>
         </div>
-        <p class="small right two">* Povinná pole</p>
         <button class="form-btn" type="submit">Odeslat</button>
       </form>
       <div id="loader" class="loader" style="display: none"></div>
