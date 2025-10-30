@@ -84,34 +84,75 @@
   </head>
   <body>
     <header>
-      <nav class="header-nav">
-        <ul>
-          <li><a class="active" href="/en/index.html">Home Page</a></li>
-          <li><a href="/en/o-mne.html">About Me</a></li>
-          <li><a href="/en/sluzby.html">Services</a></li>
-          <li><a href="/en/cenik.html">Prices</a></li>
-          <li>
-            <a class="button-li" href="/en/kontakt.html">Contact</a>
-          </li>
-          <li>
-            <a href="../../index.html" title="Czech">
+      <div class="header">
+        <a href="/en/index.html" title="Home">
+          <img
+            class="header-logo"
+            src="../images/logoSoudHoriEN.svg"
+            alt="Logo"
+            height="50"
+            width="287"
+          />
+        </a>
+        <nav class="header-nav desktop-only-flex">
+          <ul>
+            <li><a class="active" href="/en/index.html">Home Page</a></li>
+            <li><a href="/en/o-mne.html">About Me</a></li>
+            <li><a href="/en/sluzby.html">Services</a></li>
+            <li><a href="/en/cenik.html">Prices</a></li>
+            <li>
+              <a class="button-li" href="/en/kontakt.html">Contact</a>
+            </li>
+            <li>
+              <a href="../../index.html" title="Czech">
+                <img
+                  src="../../images/flags/cz.png"
+                  alt="Czech"
+                  class="flag-icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger-menu">
+          <div class="mobile-only">
+            <input type="checkbox" id="menu_checkbox" />
+            <label for="menu_checkbox" class="label">
+              <div></div>
+              <div></div>
+              <div></div>
+            </label>
+          </div>
+          <div class="bgr-menu-list">
+            <a href="/en/index.html" title="Home">
               <img
-                src="../../images/flags/cz.png"
-                alt="Czech"
-                class="flag-icon"
+                class="header-logo mini"
+                src="../images/logoSoudHoriEN.svg"
+                alt="Logo"
+                height="50"
               />
             </a>
-          </li>
-        </ul>
-      </nav>
-      <a href="/en/index.html" title="Home">
-        <img
-          class="header-logo"
-          src="../images/logoSoudHoriEN.svg"
-          alt="Logo"
-          height="50"
-        />
-      </a>
+            <ul>
+              <li><a class="active" href="/en/index.html">Home Page</a></li>
+              <li><a href="/en/o-mne.html">About Me</a></li>
+              <li><a href="/en/sluzby.html">Services</a></li>
+              <li><a href="/en/cenik.html">Prices</a></li>
+              <li>
+                <a class="button-li" href="/en/kontakt.html">Contact</a>
+              </li>
+              <li>
+                <a href="../../index.html" title="Czech">
+                  <img
+                    src="../../images/flags/cz.png"
+                    alt="Czech"
+                    class="flag-icon"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main class="centered-main">
       <div class="hero-section">
@@ -215,7 +256,6 @@
         </div>
       </section>
     </main>
-
     <div class="form thicker-form">
       <h2>Send me your message</h2>
       <form id="contact-form">
@@ -270,40 +310,50 @@
         height="50"
       />
       <div class="footer-line">
-        <div class="contact-info">
-          <p>Pavla Hampton</p>
-          <p>
-            Email:
-            <a class="contact-link" href="mailto:hamptonpavla51@gmail.com"
-              >hamptonpavla51@gmail.com</a
-            >
-            <br />
-            Phone:
-            <a class="contact-link" href="tel:+420603257035"
-              >+420 603 257 035</a
-            >
+        <div class="left-column-foot">
+          <div class="contact-info">
+            <p class="desktop-only">Pavla Hampton</p>
+            <p>
+              Email:
+              <a class="contact-link" href="mailto:hamptonpavla51@gmail.com"
+                >hamptonpavla51@gmail.com</a
+              >
+              <br />
+              Phone:
+              <a class="contact-link" href="tel:+420603257035"
+                >+420 603 257 035</a
+              >
 
-            <span
-              class="tooltip"
-              title="I might not be able to pick up your call immediately because i am teaching or interpreting at the moment. Do not worry, I will call you back as soon as possible."
-            >
-              <i class="fa-solid fa-circle-info"></i
-            ></span>
-          </p>
-        </div>
-        <div class="address">
-          <p>My Location:</p>
-          <address>
-            <a
-              href="https://www.google.com/maps/place/B%C3%BD%C4%8Dkovice+59,+412+01"
-              target="_blank"
-              rel="noopener"
-              class="contact-link"
-            >
-              Býčkovice 59, 412 01, <br />
-              Czech Republic
-            </a>
-          </address>
+              <span
+                class="tooltip"
+                title="I might not be able to pick up your call immediately because i am teaching or interpreting at the moment. Do not worry, I will call you back as soon as possible."
+              >
+                <i class="fa-solid fa-circle-info"></i
+              ></span>
+            </p>
+          </div>
+          <div class="address">
+            <p>My Location:</p>
+            <address>
+              <a
+                href="https://www.google.com/maps/place/B%C3%BD%C4%8Dkovice+59,+412+01"
+                target="_blank"
+                rel="noopener"
+                class="contact-link desktop-ADD"
+              >
+                Býčkovice 59, 412 01, <br />
+                Czech Republic
+              </a>
+              <a
+                href="https://www.google.com/maps/place/B%C3%BD%C4%8Dkovice+59,+412+01"
+                target="_blank"
+                rel="noopener"
+                class="contact-link mobile-ADD"
+              >
+                Býčkovice 59, 412 01, Czech Republic
+              </a>
+            </address>
+          </div>
         </div>
         <div class="map">
           <iframe
@@ -321,7 +371,7 @@
       <p class="footer-copyright">
         &copy;2025 Pavla Hampton - Sworn Translator since 1996
       </p>
-      <nav class="footer-nav">
+      <nav class="footer-nav desktop-VOP">
         <ul>
           <li><a class="active" href="/en/index.html">Home Page</a></li>
           <li><a href="/en/o-mne.html">About Me</a></li>
@@ -344,7 +394,35 @@
           </li>
         </ul>
       </nav>
+      <a href="../../assets/VOP.pdf" target="_blank" class="mobile-VOP"
+        >General Terms and Conditions</a
+      >
     </footer>
+    <div class="mobile-bar">
+      <a class="mb" href="tel:+420603257035"
+        ><img
+          src="../../images/phone.svg"
+          alt="Telefon"
+          class="phone-svg"
+          height="20"
+      /></a>
+      <a class="mb" href="mailto:hamptonpavla51@gmail.com"
+        ><img
+          src="../../images/mail.svg"
+          alt="Email"
+          class="email-svg"
+          height="20"
+        />
+      </a>
+      <div class="mb">
+        <input type="checkbox" id="menu_checkbox1" />
+        <label for="menu_checkbox1" class="label">
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
+      </div>
+    </div>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const form = document.getElementById("contact-form");
@@ -379,6 +457,25 @@
           );
         });
       });
+
+      const menu1 = document.getElementById("menu_checkbox");
+      const menu2 = document.getElementById("menu_checkbox1");
+      const menuList = document.querySelector(".bgr-menu-list");
+
+      function syncMenu(isOpen) {
+        menu1.checked = isOpen;
+        menu2.checked = isOpen;
+        menuList.classList.toggle("open", isOpen);
+      }
+
+      menu1.addEventListener("change", () => syncMenu(menu1.checked));
+      menu2.addEventListener("change", () => syncMenu(menu2.checked));
+
+      document
+        .querySelectorAll(".bgr-menu-list a")
+        .forEach((link) =>
+          link.addEventListener("click", () => syncMenu(false))
+        );
     </script>
   </body>
 </html>
