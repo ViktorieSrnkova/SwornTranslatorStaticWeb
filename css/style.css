@@ -55,6 +55,7 @@ h1 {
 }
 .small {
   font-size: small;
+  color: red;
 }
 .header {
   width: 1152px;
@@ -216,6 +217,7 @@ nav a.active {
 .thicker-form .one,
 .thinner-form .one {
   display: block;
+  font-size: small;
 }
 .form-consent {
   display: flex;
@@ -427,21 +429,21 @@ nav a.active {
   border-radius: 8px;
 }
 .pricing-table {
-  width: 100%; /* tabulka zabere celý div */
-  border-collapse: collapse; /* sjednocení hranic buněk pro lepší vzhled */
+  width: 100%;
+  border-collapse: collapse;
   margin-top: 20px;
 }
 .pricing-table th,
 .pricing-table td {
-  border: 1px solid #333; /* černé ohraničení buněk */
-  padding: 10px; /* prostor uvnitř buněk */
-  text-align: left; /* zarovnání textu */
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: left;
 }
 .pricing-table th {
-  background-color: #ffd90070; /* světlejší pozadí pro hlavičku */
+  background-color: #ffd90070;
 }
 .pricing-table tbody tr:nth-child(odd) {
-  background-color: #ffd90030; /* střídavé barvy řádků pro lepší čitelnost */
+  background-color: #ffd90030;
 }
 .lesson-form-textarea textarea {
   min-height: 100px;
@@ -500,7 +502,7 @@ nav a.active {
   width: 15%;
 }
 .table-prices tbody tr:nth-child(odd) {
-  background-color: #f9f9f9; /* světle šedé pozadí lichých řádků */
+  background-color: #f9f9f9;
 }
 .price-list-units {
   margin-top: 0px;
@@ -542,6 +544,7 @@ nav a.active {
 }
 
 /*===================== HOME =====================*/
+
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -576,6 +579,7 @@ nav a.active {
 .index-subtitle {
   margin-top: 0px;
   width: 80%;
+  max-width: 1152px;
   text-align: center;
   margin-bottom: 28px;
 }
