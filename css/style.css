@@ -459,7 +459,7 @@ nav a.active {
   margin-top: 0;
 }
 .lektor-main {
-  background-image: url("/images/bgr.png");
+  background-image: url("/SwornTranslatorStaticWeb/images/bgr.png");
   background-color: rgb(255, 255, 255, 0.2);
   background-blend-mode: lighten;
 }
@@ -548,13 +548,13 @@ nav a.active {
   align-items: center;
   height: fit-content;
   width: 100%;
-  background-image: url("/images/docs_img.jpg");
+  background-image: url("/SwornTranslatorStaticWeb/images/docs_img.jpg");
   background-color: rgb(255, 255, 255, 0.75);
   background-blend-mode: lighten;
   background-size: cover;
 }
 .lector-hero {
-  background-image: url("/images/english_lessons.jpg");
+  background-image: url("/SwornTranslatorStaticWeb/images/english_lessons.jpg");
   background-color: rgb(255, 255, 255, 0.75);
   background-blend-mode: lighten;
   background-size: cover;
