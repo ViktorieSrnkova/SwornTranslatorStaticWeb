@@ -47,25 +47,25 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://viktoriesrnkova.github.io/SwornTranslatorStaticWeb/en/o-mne.html</loc>
+    <loc>https://viktoriesrnkova.github.io/SwornTranslatorStaticWeb/en/about-me.html</loc>
     <lastmod>2025-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://viktoriesrnkova.github.io/SwornTranslatorStaticWeb/en/sluzby.html</loc>
+    <loc>https://viktoriesrnkova.github.io/SwornTranslatorStaticWeb/en/services.html</loc>
     <lastmod>2025-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://viktoriesrnkova.github.io/SwornTranslatorStaticWeb/en/cenik.html</loc>
+    <loc>https://viktoriesrnkova.github.io/SwornTranslatorStaticWeb/en/prices.html</loc>
     <lastmod>2025-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viktoriesrnkova.github.io/SwornTranslatorStaticWeb/en/kontakt.html</loc>
+    <loc>https://viktoriesrnkova.github.io/SwornTranslatorStaticWeb/en/contact.html</loc>
     <lastmod>2025-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
