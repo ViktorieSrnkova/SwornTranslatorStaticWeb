@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://uzivatelske-jmeno.github.io/nazev-repozitare/sitemap.xml
+Sitemap: https://viktoriesrnkova.github.io/SwornTranslatorStaticWeb/sitemap.xml
