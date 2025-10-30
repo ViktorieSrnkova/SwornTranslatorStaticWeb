@@ -22,10 +22,11 @@
   --color-border: #0077cc60;
   --color-btn-hover: #ffed89;
 }
+
+/*============= BASE STYLES =============*/
 html {
   scroll-behavior: smooth;
 }
-/*============= BASE STYLES =============*/
 body {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -90,6 +91,7 @@ form textarea {
 img {
   border-radius: 8px;
 }
+
 /*============== NAV ==============*/
 nav ul {
   list-style: none;
@@ -164,6 +166,7 @@ nav a.active {
   color: var(--color-inverted);
   background-color: var(--color-secondary);
 }
+
 /*=========== MOBILE BAR ============*/
 .mobile-bar {
   display: none;
@@ -203,21 +206,17 @@ nav a.active {
   min-height: 200px;
   resize: none;
 }
-
 #contact-form {
   width: 60%;
   margin: auto;
 }
-
 .thinner-form #contact-form {
   width: 100%;
 }
-
 .thicker-form .one,
 .thinner-form .one {
   display: block;
 }
-
 .form-consent {
   display: flex;
   align-items: flex-start;
@@ -234,7 +233,6 @@ nav a.active {
 .form-consent label {
   width: 80%;
 }
-
 .right {
   text-align: right;
   margin: 0;
@@ -244,7 +242,6 @@ nav a.active {
   display: flex;
   margin-top: 24px;
 }
-
 .form-btn {
   padding: 8px 16px;
   border-radius: 8px;
@@ -262,6 +259,7 @@ nav a.active {
 .form-btn:hover {
   background-color: var(--color-secondary);
 }
+
 /*=================== LOADER===================*/
 .loader {
   width: 50px;
@@ -294,7 +292,6 @@ nav a.active {
 .footer-logo {
   position: absolute;
 }
-
 .footer-line {
   display: flex;
   flex-direction: row;
@@ -310,20 +307,17 @@ nav a.active {
 .contact-info p {
   margin: 8px 0;
 }
-
 .map {
   width: 600px;
 }
 .map iframe {
   border-radius: 8px;
 }
-
 .footer-copyright {
   position: absolute;
   margin: 0;
   transform: translateY(-25.6px);
 }
-
 .footer-nav {
   display: flex;
   justify-content: center;
@@ -437,18 +431,15 @@ nav a.active {
   border-collapse: collapse; /* sjednocení hranic buněk pro lepší vzhled */
   margin-top: 20px;
 }
-
 .pricing-table th,
 .pricing-table td {
   border: 1px solid #333; /* černé ohraničení buněk */
   padding: 10px; /* prostor uvnitř buněk */
   text-align: left; /* zarovnání textu */
 }
-
 .pricing-table th {
   background-color: #ffd90070; /* světlejší pozadí pro hlavičku */
 }
-
 .pricing-table tbody tr:nth-child(odd) {
   background-color: #ffd90030; /* střídavé barvy řádků pro lepší čitelnost */
 }
@@ -478,12 +469,10 @@ nav a.active {
 }
 
 /*============= PRICES ==============*/
-
 .table-prices {
   width: 100%;
   border-collapse: collapse;
 }
-
 .table-prices tr,
 .table-prices td {
   border: 1px solid black;
@@ -498,22 +487,18 @@ nav a.active {
   font-weight: bold;
   background-color: #e0f0ff;
 }
-
 .table-prices th:nth-child(1),
 .table-prices td:nth-child(1) {
   width: 40%;
 }
-
 .table-prices th:nth-child(2),
 .table-prices td:nth-child(2) {
   width: 45%;
 }
-
 .table-prices th:nth-child(3),
 .table-prices td:nth-child(3) {
   width: 15%;
 }
-
 .table-prices tbody tr:nth-child(odd) {
   background-color: #f9f9f9; /* světle šedé pozadí lichých řádků */
 }
@@ -557,7 +542,6 @@ nav a.active {
 }
 
 /*===================== HOME =====================*/
-
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -628,19 +612,16 @@ nav a.active {
   width: 100%;
   padding: 40px 0;
 }
-
 .color-section > *,
 .white-section > * {
   max-width: 1152px;
   margin: auto;
   width: 100%;
 }
-
 .color-section small,
 .white-section small {
   padding-left: calc((100% - 1152px) / 2);
 }
-
 .white-section hr,
 .color-section hr {
   max-width: 100%;
@@ -736,6 +717,7 @@ nav a.active {
 .colored-header {
   background-color: var(--color-faded);
 }
+
 /*==================== HAMBURGER ====================*/
 .mobile-only {
   display: none;
@@ -744,7 +726,6 @@ nav a.active {
 #menu_checkbox1 {
   display: none;
 }
-
 .label {
   position: relative;
   width: 35px;
@@ -753,50 +734,39 @@ nav a.active {
   display: block;
   margin: 0 auto;
 }
-
-/* Remove the red/green overlay */
 .label:before {
   content: none;
 }
-
 .label div {
   position: relative;
-  height: 4px; /* thinner lines */
+  height: 4px;
   width: 100%;
-  background-color: #000; /* black lines */
+  background-color: #000;
   margin-bottom: 8px;
   border-radius: 8px;
   transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width,
     0.3s ease right;
 }
-
 .label div:last-child {
   margin-bottom: 0;
 }
-
-/* Transform origins for clean rotation */
 .label div:first-child {
   transform-origin: left;
 }
-
 .label div:last-child {
   transform-origin: left;
 }
-
-/* Checked state - make X */
 #menu_checkbox:checked + .label div:first-child,
 #menu_checkbox1:checked + .label div:first-child {
   top: 0px;
   transform: rotate(39deg);
   width: 39px;
 }
-
 #menu_checkbox:checked + .label div:nth-child(2),
 #menu_checkbox1:checked + .label div:nth-child(2) {
   opacity: 0;
   transition: ease-in-out 0.1s;
 }
-
 #menu_checkbox:checked + .label div:last-child,
 #menu_checkbox1:checked + .label div:last-child {
   transform: rotate(-39deg);
@@ -811,7 +781,6 @@ nav a.active {
   pointer-events: none;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
-
 .bgr-menu-list.open {
   opacity: 1;
   visibility: visible;
@@ -916,11 +885,9 @@ nav a.active {
   h1 {
     font-size: 1.6em;
   }
-
   h2 {
     font-size: 1.2em;
   }
-
   h3 {
     font-size: 1em;
   }
@@ -934,7 +901,6 @@ nav a.active {
     align-items: center;
     gap: 40px;
   }
-
   .logo-kruh {
     padding-top: 0;
   }
@@ -1036,7 +1002,6 @@ nav a.active {
   h2 {
     text-align: center !important;
   }
-
   h3 {
     text-align: center !important;
   }
@@ -1051,7 +1016,6 @@ nav a.active {
     background-repeat: no-repeat;
     background-position: 10% 0%;
   }
-
   .small-btns {
     display: flex;
     flex-direction: column;
@@ -1110,12 +1074,10 @@ nav a.active {
   .table-prices td:nth-child(1) {
     width: 30%;
   }
-
   .table-prices th:nth-child(2),
   .table-prices td:nth-child(2) {
     width: 45%;
   }
-
   .table-prices th:nth-child(3),
   .table-prices td:nth-child(3) {
     width: 30%;
