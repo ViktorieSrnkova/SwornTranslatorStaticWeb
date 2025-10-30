@@ -86,34 +86,74 @@
     />
   </head>
   <body>
-    <header>
-      <nav class="header-nav">
-        <ul>
-          <li><a href="/index.html">Hlavní stránka</a></li>
-          <li><a href="/o-mne.html">O mně</a></li>
-          <li><a href="/sluzby.html">Služby</a></li>
-          <li><a class="active" href="/cenik.html">Ceník</a></li>
-          <li><a href="/lekce.html">Lekce angličtiny</a></li>
-          <li><a class="button-li" href="/kontakt.html">Kontakt</a></li>
-          <li>
-            <a href="../../en/cenik.html" title="English">
+    <header class="colored-header">
+      <div class="header">
+        <a href="/index.html" title="Domů">
+          <img
+            class="header-logo"
+            src="../images/logoSoudHori.svg"
+            alt="Logo Pavla Hampton – tlumočení a překlady"
+            height="50"
+            width="287"
+          />
+        </a>
+        <nav class="header-nav desktop-only-flex">
+          <ul>
+            <li><a href="/index.html">Hlavní stránka</a></li>
+            <li><a href="/o-mne.html">O mně</a></li>
+            <li><a href="/sluzby.html">Služby</a></li>
+            <li><a class="active" href="/cenik.html">Ceník</a></li>
+            <li><a href="/lekce.html">Lekce angličtiny</a></li>
+            <li><a class="button-li" href="/kontakt.html">Kontakt</a></li>
+            <li>
+              <a href="../../en/cenik.html" title="English">
+                <img
+                  src="../../images/flags/uk.png"
+                  alt="English"
+                  class="flag-icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger-menu">
+          <div class="mobile-only">
+            <input type="checkbox" id="menu_checkbox" />
+            <label for="menu_checkbox" class="label">
+              <div></div>
+              <div></div>
+              <div></div>
+            </label>
+          </div>
+          <div class="bgr-menu-list">
+            <a href="/index.html" title="Domů">
               <img
-                src="../../images/flags/uk.png"
-                alt="English"
-                class="flag-icon"
+                class="header-logo mini"
+                src="../images/logoSoudHori.svg"
+                alt="Logo Pavla Hampton – tlumočení a překlady"
+                height="50"
               />
             </a>
-          </li>
-        </ul>
-      </nav>
-      <a href="/index.html" title="Domů">
-        <img
-          class="header-logo"
-          src="../images/logoSoudHori.svg"
-          alt="Logo Pavla Hampton – tlumočení a překlady"
-          height="50"
-        />
-      </a>
+            <ul>
+              <li><a href="/index.html">Hlavní stránka</a></li>
+              <li><a href="/o-mne.html">O mně</a></li>
+              <li><a href="/sluzby.html">Služby</a></li>
+              <li><a class="active" href="/cenik.html">Ceník</a></li>
+              <li><a href="/lekce.html">Lekce angličtiny</a></li>
+              <li><a class="button-li" href="/kontakt.html">Kontakt</a></li>
+              <li>
+                <a href="../../en/index.html" title="English">
+                  <img
+                    src="../../images/flags/uk.png"
+                    alt="English"
+                    class="flag-icon"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main class="centered-main">
       <h1 class="page-title">PŘEHLEDNÝ CENÍK SLUŽEB</h1>
@@ -305,39 +345,49 @@
         height="50"
       />
       <div class="footer-line">
-        <div class="contact-info">
-          <p>Pavla Hampton</p>
-          <p>
-            Email:
-            <a class="contact-link" href="mailto:hamptonpavla51@gmail.com"
-              >hamptonpavla51@gmail.com
-            </a>
-            <br />
-            Telefon:
-            <a class="contact-link" href="tel:+420603257035"
-              >+420 603 257 035</a
-            >
-            <span
-              class="tooltip"
-              title=" Možná nebudu moci ihned reagovat na vaše volání nebo zprávu, protože právě učím nebo tlumočím. Bez obav, spojím se s Vámi, jakmile to budemožné."
-            >
-              <i class="fa-solid fa-circle-info"></i
-            ></span>
-          </p>
-        </div>
-        <div class="address">
-          <p>Moje Lokace:</p>
-          <address>
-            <a
-              href="https://www.google.com/maps/place/B%C3%BD%C4%8Dkovice+59,+412+01"
-              target="_blank"
-              rel="noopener"
-              class="contact-link"
-            >
-              Býčkovice 59, 412 01, <br />
-              Česká republika
-            </a>
-          </address>
+        <div class="left-column-foot">
+          <div class="contact-info">
+            <p class="desktop-only">Pavla Hampton</p>
+            <p>
+              Email:
+              <a class="contact-link" href="mailto:hamptonpavla51@gmail.com"
+                >hamptonpavla51@gmail.com
+              </a>
+              <br />
+              Telefon:
+              <a class="contact-link" href="tel:+420603257035"
+                >+420 603 257 035</a
+              >
+              <span
+                class="tooltip"
+                title=" Možná nebudu moci ihned reagovat na vaše volání nebo zprávu, protože právě učím nebo tlumočím. Bez obav, spojím se s Vámi, jakmile to budemožné."
+              >
+                <i class="fa-solid fa-circle-info"></i
+              ></span>
+            </p>
+          </div>
+          <div class="address">
+            <p>Moje Lokace:</p>
+            <address>
+              <a
+                href="https://www.google.com/maps/place/B%C3%BD%C4%8Dkovice+59,+412+01"
+                target="_blank"
+                rel="noopener"
+                class="contact-link desktop-ADD"
+              >
+                Býčkovice 59, 412 01, <br />
+                Česká Republika
+              </a>
+              <a
+                href="https://www.google.com/maps/place/B%C3%BD%C4%8Dkovice+59,+412+01"
+                target="_blank"
+                rel="noopener"
+                class="contact-link mobile-ADD"
+              >
+                Býčkovice 59, 412 01,Česká Republika
+              </a>
+            </address>
+          </div>
         </div>
         <div class="map">
           <iframe
@@ -355,7 +405,7 @@
       <p class="footer-copyright">
         &copy;2025 Pavla Hampton - Soudní překladatelka od roku 1996
       </p>
-      <nav class="footer-nav">
+      <nav class="footer-nav desktop-VOP">
         <ul>
           <li><a href="/index.html">Hlavní stránka</a></li>
           <li><a href="/o-mne.html">O mně</a></li>
@@ -379,6 +429,54 @@
           </li>
         </ul>
       </nav>
+      <a href="../../assets/VOP.pdf" target="_blank" class="mobile-VOP"
+        >Všeobecné obchodní podmínky</a
+      >
     </footer>
+    <div class="mobile-bar">
+      <a class="mb" href="tel:+420603257035"
+        ><img
+          src="../../images/phone.svg"
+          alt="Telefon"
+          class="phone-svg"
+          height="20"
+      /></a>
+      <a class="mb" href="mailto:hamptonpavla51@gmail.com"
+        ><img
+          src="../../images/mail.svg"
+          alt="Email"
+          class="email-svg"
+          height="20"
+        />
+      </a>
+      <div class="mb">
+        <input type="checkbox" id="menu_checkbox1" />
+        <label for="menu_checkbox1" class="label">
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
+      </div>
+    </div>
+    <script>
+      const menu1 = document.getElementById("menu_checkbox");
+      const menu2 = document.getElementById("menu_checkbox1");
+      const menuList = document.querySelector(".bgr-menu-list");
+
+      function syncMenu(isOpen) {
+        menu1.checked = isOpen;
+        menu2.checked = isOpen;
+        menuList.classList.toggle("open", isOpen);
+      }
+
+      menu1.addEventListener("change", () => syncMenu(menu1.checked));
+      menu2.addEventListener("change", () => syncMenu(menu2.checked));
+
+      document
+        .querySelectorAll(".bgr-menu-list a")
+        .forEach((link) =>
+          link.addEventListener("click", () => syncMenu(false))
+        );
+    </script>
   </body>
 </html>
