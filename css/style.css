@@ -37,7 +37,6 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;
-  width: 100%;
 }
 .no-margin {
   margin: 0;
