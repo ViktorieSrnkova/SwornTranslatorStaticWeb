@@ -953,6 +953,7 @@ nav a.active {
     transform: none;
     height: 43px;
     aspect-ratio: initial;
+    width: auto;
   }
   .contact-info {
     height: auto;
