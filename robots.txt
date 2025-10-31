@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://viktoriesrnkova.github.io/SwornTranslatorStaticWeb/sitemap.xml
+Sitemap: https://www.pavlahampton.cz/sitemap.xml
