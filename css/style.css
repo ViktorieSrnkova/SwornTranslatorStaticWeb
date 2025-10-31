@@ -126,6 +126,7 @@ nav a.active {
   width: 100%;
   left: 0;
   padding: 1rem;
+  box-sizing: border-box;
   margin-top: 8px;
 }
 .bgr-menu-list ul {
@@ -951,6 +952,7 @@ nav a.active {
     position: static;
     transform: none;
     height: 43px;
+    aspect-ratio: initial;
   }
   .contact-info {
     height: auto;
@@ -1073,6 +1075,7 @@ nav a.active {
   }
   .index-logo {
     width: 222px;
+    aspect-ratio: initial;
   }
   .table-prices th:nth-child(1),
   .table-prices td:nth-child(1) {
