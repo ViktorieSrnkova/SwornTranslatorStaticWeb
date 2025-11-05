@@ -323,17 +323,10 @@ nav a.active {
 }
 .footer-nav {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   gap: 1em;
   margin: 0;
   padding-top: 32px;
-}
-.footer-nav ul li a {
-  color: var(--color-primary) !important;
-}
-.button-li {
-  color: var(--white) !important;
 }
 /*============= CONTACT ==============*/
 .contact-page {
@@ -719,6 +712,15 @@ nav a.active {
 }
 .desktop-only-flex {
   display: flex;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1em;
+}
+.footer-nav ul li a {
+  color: var(--color-primary);
 }
 .colored-header {
   background-color: var(--color-faded);
