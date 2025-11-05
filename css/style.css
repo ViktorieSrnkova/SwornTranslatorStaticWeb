@@ -323,10 +323,14 @@ nav a.active {
 }
 .footer-nav {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   gap: 1em;
   margin: 0;
   padding-top: 32px;
+}
+.footer-nav ul li a {
+  color: var(--color-primary);
 }
 /*============= CONTACT ==============*/
 .contact-page {
@@ -712,12 +716,6 @@ nav a.active {
 }
 .desktop-only-flex {
   display: flex;
-}
-.footer-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1em;
 }
 .colored-header {
   background-color: var(--color-faded);
