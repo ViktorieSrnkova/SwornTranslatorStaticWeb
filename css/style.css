@@ -332,6 +332,9 @@ nav a.active {
 .footer-nav ul li a {
   color: var(--color-primary) !important;
 }
+.button-li {
+  color: var(--white) !important;
+}
 /*============= CONTACT ==============*/
 .contact-page {
   display: flex;
