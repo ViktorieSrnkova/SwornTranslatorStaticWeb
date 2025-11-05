@@ -330,7 +330,7 @@ nav a.active {
   padding-top: 32px;
 }
 .footer-nav ul li a {
-  color: var(--color-primary);
+  color: var(--color-primary) !important;
 }
 /*============= CONTACT ==============*/
 .contact-page {
