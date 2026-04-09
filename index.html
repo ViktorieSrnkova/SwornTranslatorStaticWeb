@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +6,7 @@
 
     <meta
       name="description"
-      content="Profesionální překlady a tlumočení z/do angličtiny. Soudní překlady, tlumočení, lekce angličtiny."
+      content="Pavla Hampton – soudní překladatelka a tlumočnice s praxí od roku 1996. Profesionální překlady a tlumočení z/do angličtiny, důraz na přesnost a důvěrnost."
     />
     <meta
       name="keywords"
@@ -171,7 +171,7 @@
         </h2>
       </div>
 
-      <section class="white-section">
+      <section class="white-section" data-nosnippet="false">
         <h2>Kdo jsem</h2>
         <p>
           Jmenuji se Pavla Hampton a už od roku 1996 pomáhám lidem překonávat
@@ -190,7 +190,7 @@
           </p>
           <button
             class="button-main btn-right"
-            onclick="location.href='/o-mne.html'"
+            onclick="location.href = '/o-mne.html'"
           >
             O mně
           </button>
@@ -215,16 +215,16 @@
         </ul>
 
         <div class="btn-group small-btns">
-          <button class="button-main" onclick="location.href='/sluzby.html'">
+          <button class="button-main" onclick="location.href = '/sluzby.html'">
             Služby
           </button>
-          <button class="button-main" onclick="location.href='/lekce.html'">
+          <button class="button-main" onclick="location.href = '/lekce.html'">
             Výuka angličtiny
           </button>
         </div>
       </section>
       <br />
-      <section class="white-section">
+      <section class="white-section" data-nosnippet>
         <h2>Pojďte se učit angličtinu</h2>
         <p>
           Jsem lektorka angličtiny se státní jazykovou zkouškou na úrovni C2 a
@@ -238,7 +238,7 @@
           chcete zlepšit plynulost a sebevědomí v angličtině.
         </p>
         <p>
-          <button class="button-main" onclick="location.href='/lekce.html'">
+          <button class="button-main" onclick="location.href = '/lekce.html'">
             Lekce angličtiny
           </button>
         </p>
@@ -252,7 +252,7 @@
           potenciální zakázky.
         </p>
         <p>
-          <button class="button-main" onclick="location.href='/cenik.html'">
+          <button class="button-main" onclick="location.href = '/cenik.html'">
             Ceník překladů a tlumočení
           </button>
         </p>
@@ -264,7 +264,7 @@
           </p>
           <button
             class="button-main btn-right"
-            onclick="location.href='/lekce.html#pricing'"
+            onclick="location.href = '/lekce.html#pricing'"
           >
             Ceník lekcí angličtiny
           </button>
@@ -282,7 +282,7 @@
         <div class="btn-group">
           <button
             class="button-main btn-right"
-            onclick="location.href='/kontakt.html'"
+            onclick="location.href = '/kontakt.html'"
           >
             Nezávazná kalkulace
           </button>
@@ -496,7 +496,7 @@
             function (error) {
               console.error("Chyba při odesílání:", error);
               alert("Něco se pokazilo, zkuste to prosím později.");
-            }
+            },
           );
         });
       });
@@ -517,7 +517,7 @@
       document
         .querySelectorAll(".bgr-menu-list a")
         .forEach((link) =>
-          link.addEventListener("click", () => syncMenu(false))
+          link.addEventListener("click", () => syncMenu(false)),
         );
     </script>
   </body>
